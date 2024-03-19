@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="./css/stylePagamento.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-checkout">
+      <nav class="nav-bar">
+        <div class="item01">
+          <a class="sacola " href="./indexSac.html">Sacola</a>
+        </div>
+
+        <div class="item02">
+          <a class="pagamento" href="">Pagamento</a>
+        </div>
+
+        <div class="item03">
+          <a class="confirmacao" href="">Confirmação</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="bag">
+
+      <div class="title">
+        <h1>Cartão de crédito</h1>
+      </div>
+
+      <div class="pagamento">
+        <form action="" id="form-cartao">
+          <div class="numero">
+            <label for="numero-cartao">Número</label> <br>
+            <input id="numero-cartao" type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
+          </div>
+          <br>
+          <div class="nome">
+            <label for="titular-cartao">Nome do titular do cartão</label> <br>
+            <input id="titular-cartao" type="text" placeholder="Nome impresso no cartão" required>
+          </div>
+          <br>
+          <div class="validade">
+            <div class="apelido-do-endereco-a">
+              <label for="validade-cartao">Data de validade</label><br>
+              <input id="validade-cartao" type="text" placeholder="MM/AA" onfocus="this.type='month'"
+                onblur="if (!this.value) this.type='text'" required>
+
+            </div>
+            <div class="apelido-do-endereco-b">
+              <label for="cvv">Código CVV:</label> <br>
+              <input type="text" id="cvv" placeholder="000" maxlength="3" required>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="payment">
+        <div class="price">
+          
+        </div>
+        
+        <div class="ctas">
+          <a class="link" href="#"><button class="btn" type="submit">
+            Finalizar Pagamento
+          </button></a>
+          
+        </div>
+    </div>
+  </form>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+  <script src="./js/View.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
